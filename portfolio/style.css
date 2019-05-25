@@ -1,0 +1,97 @@
+
+@keyframes floating {
+	0% {transform: translateY(3px);}
+	0% {transform: translateY(-6px);}
+	0% {transform: translateY(6px);}
+	10% {transform: translateY(-6px);}
+	20% {transform: translateY(6px);}
+	30% {transform: translateY(-6px);}
+	40% {transform: translateY(6px);}
+	50% {transform: translateY(-6px);}
+	60% {transform: translateY(6px);}
+	70% {transform: translateY(-6px);}
+	80% {transform: translateY(6px);}
+	90% {transform: translateY(-6px);}
+	100% {transform: translateY(6px);}
+}
+a:link,
+a:active,
+a:visited {
+	color: lightgreen;
+	text-decoration: none;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+nav {
+	visibility: hidden;
+
+}
+
+.welcomeSection {
+	height: 100vh;
+	width: 100%;
+	padding: 0px;
+}
+.backgroundPhoto {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0px;
+	left: 0px;
+	opacity: 0.5;
+	margin: 0px;
+	padding: 0px;
+	z-index: 1;
+}
+.mainHeaderText {
+	position: relative;
+	top: 30%;
+	opacity: none;
+	text-shadow: 0px 0px 0.2px black;
+	line-height: 15vh;
+}
+.menuToggleBar {
+	position: absolute;
+	opacity: 0.6;
+	top: 30px;
+	left: 30px;
+	z-index: 5;
+}
+.menuToggleBar:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+.matrixCode {
+
+}
+#canvas{
+  background-color:#000;
+  display: block;
+  margin:auto;
+  box-shadow: -2px 0px 10px inset black,
+  2px 0px 10px inset black;
+}
+.menuSection {
+	background: black;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	max-height: 100%;
+	max-width: 100%;
+}
+.menuText {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: lightgreen;
+	text-shadow: 1px 1px 3px green;
+	font-size: 5vh;
+	animation: floating 10s linear infinite;
+}
+.menuText:hover {
+	transform: skew(150deg,150deg);
+}
