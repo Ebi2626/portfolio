@@ -1,0 +1,202 @@
+	<!DOCTYPE html>
+	<head>
+	<meta lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+
+@keyframes floating {
+	0% {transform: translateY(3px);}
+	0% {transform: translateY(-6px);}
+	0% {transform: translateY(6px);}
+	10% {transform: translateY(-6px);}
+	20% {transform: translateY(6px);}
+	30% {transform: translateY(-6px);}
+	40% {transform: translateY(6px);}
+	50% {transform: translateY(-6px);}
+	60% {transform: translateY(6px);}
+	70% {transform: translateY(-6px);}
+	80% {transform: translateY(6px);}
+	90% {transform: translateY(-6px);}
+	100% {transform: translateY(6px);}
+}
+a:link,
+a:active,
+a:visited {
+	color: lightgreen;
+	text-decoration: none;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	max-height: 100vh;
+	overflow: hidden;
+}
+nav {
+	visibility: hidden;
+
+}
+
+.welcomeSection {
+	height: 100vh;
+	width: 100%;
+	padding: 0px;
+}
+.backgroundPhoto {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0px;
+	left: 0px;
+	opacity: 0.5;
+	margin: 0px;
+	padding: 0px;
+	z-index: 1;
+}
+.mainHeaderText {
+	position: relative;
+	top: 30%;
+	opacity: none;
+	text-shadow: 0px 0px 0.2px black;
+	line-height: 15vh;
+}
+.menuToggleBar {
+	position: absolute;
+	opacity: 0.6;
+	top: 30px;
+	left: 30px;
+	z-index: 5;
+}
+.menuToggleBar:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+.matrixCode {
+
+}
+#canvas{
+  background-color:#000;
+  display: block;
+  margin:auto;
+  box-shadow: -2px 0px 10px inset black,
+  2px 0px 10px inset black;
+}
+.menuSection {
+	background: black;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	max-height: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+.menuText {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: lightgreen;
+	text-shadow: 1px 1px 3px green;
+	font-size: 5vh;
+	animation: floating 10s linear infinite;
+}
+.menuText:hover {
+	transform: scale(1.1) !important;
+}
+#rightMenu:hover,
+#leftMenu:hover {
+	transform: scale(1.2);
+}
+.line {
+	position: relative;
+	width: 75vw;
+	height: 10px;
+	border: solid black;
+
+}
+.point {
+	position: absolute;
+	width: 3px;
+	height: 20px;
+	background-color: black;
+	transform: translateY(-10px);
+}
+#p1 {
+	left: 10vw;
+}
+#p2 {
+	left: 20vw;
+}
+#p3 {
+	left: 30vw;
+}
+#p4 {
+	left: 40vw;
+}
+#p5 {
+	left: 50vw;
+}
+#p6 {
+	left: 60vw;
+}
+.describe {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.date {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.mePhoto {
+	background-color: black;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	float: left;
+}
+.stackItem {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+}
+
+	</style>
+</head>
+<body>
+<section id="aboutMe" class="Me justify-content-center text-center" style="height: 100vh;">
+<div class="row" id="wholePageMe">
+<div class="col-4 text-center pl-4" id="story"><header><h4>Edwin Harmata</h4></header>
+	<img class="mePhoto m-2">
+<p class="text-justify p-2">I have always been curious kid. Since primary school I have been a scout and till now, I'm still asking question about reality and world around. It's mechanismes and scientific misteries. That attitude leads me to passing matura exam with four faculties. After high school I decided to studying psychology because I was interested in way of human mind works. During studies I discover my own special abilities, which I should use to feel satisfaction of proffesional work. My two main features are perfectionism and logical-thinking, which makes me perfect matched to work as programmist. Since that discover I have been learning another technologies at online courses and prepare projects in order to get work which I will love.</p>
+<p class="mt-4" style="line-height: 15vh;">My progress timeline:</p></div>
+<div class="col-4 text-center contact "><h4>Technology stack</h4>
+<img class="stackItem" src="html.jpg"><img class="stackItem" src="css.png"><img class="stackItem" src="rwd.png"><img class="stackItem" src="bootstrap.png"><img class="stackItem" src="jquery.png"></div>
+<div class="col-4 text-center contact"><h4>How to contact with me?</h4></div>
+</div>
+</div>
+<div id="timeline" class="line ml-4 mt-4"><div class="point" id="p1"><span class="describe m-4"><p>HTML</p></span></div><div class="point" id="p2"><span class="describe m-4"><p>CSS</p></span></div><div class="point" id="p3"><span class="describe m-4"><p>Bootstrap</p></span></div><div class="point" id="p4"><span class="describe m-4"><p>RWD</p></span></div><div class="point" id="p5"><span class="describe m-4"><p>jQuery</p></span></div><div class="point" id="p6"><span class="describe m-4"><p>React</p></span></div></div></div>
+
+
+ </section>'
+
+
+
+
+<script>
+	$("#leftMenu").click(function(){
+			$("#menuSection").remove();
+		});
+	$("#rightMenu").click(function(){
+			$("#menuSection").remove();
+		});
+		</script>
+		</body>
+		</html>

@@ -1,8 +1,7 @@
 
 @keyframes floating {
+	
 	0% {transform: translateY(3px);}
-	0% {transform: translateY(-6px);}
-	0% {transform: translateY(6px);}
 	10% {transform: translateY(-6px);}
 	20% {transform: translateY(6px);}
 	30% {transform: translateY(-6px);}
@@ -13,6 +12,12 @@
 	80% {transform: translateY(6px);}
 	90% {transform: translateY(-6px);}
 	100% {transform: translateY(6px);}
+}
+@keyframes disappearing {
+	0% {width: 0%;}
+	90% {width: 100%}
+	100% {display: none; visibility: hidden;}
+
 }
 a:link,
 a:active,
@@ -82,6 +87,7 @@ nav {
 	box-sizing: border-box;
 	max-height: 100%;
 	max-width: 100%;
+	overflow: hidden;
 }
 .menuText {
 	position: relative;
@@ -93,5 +99,11 @@ nav {
 	animation: floating 10s linear infinite;
 }
 .menuText:hover {
-	transform: skew(150deg,150deg);
+	transform: scale(1.1) !important;
+}
+#rightMenu:hover,
+#leftMenu:hover {
+	transform: scale(1.2);
+}
+.neon {
 }

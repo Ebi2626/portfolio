@@ -1,7 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function Menu(){
 	$("#menuToggleBar").hide();
-	var mainMenu = '<section id="menuSection" class="menuSection row justify-content-center text-center" style="height: 100vh;"><div class="col-3 text-center"><p class="menuText"><a id="menuAboutMe">About Me</a></p></div><div class="col-6" id="matrixCode"><canvas id="canvas" style="width:100%; height:100vh; font-size: 32px;"></canvas></div><div class="col-3 text-center"><p class="menuText"><a id="menuProjects">My projects</a></p></div></section>'
+	var mainMenu = '<section id="menuSection" class="menuSection row justify-content-center text-center" style="height: 100vh;"><div class="col-3 text-center" id="leftMenu"><p class="menuText"><a id="menuAboutMe">About Me</a></p></div><div class="col-6" id="matrixCode"><canvas id="canvas" style="width:100%; height:100vh; font-size: 32px;"></canvas></div><div class="col-3 text-center" id="rightMenu"><p class="menuText"><a id="menuProjects">My projects</a></p></div></section>'
 	var header = '<h1 class="mainHeaderText display-1 col-8 offset-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-xs-12 offset-xs-0">Edwin Harmata</h1><h1 class="mainHeaderText display-1">Web Developer</h1>'
+	var aboutMe = ''
 	setTimeout(function(){
 		$("header").append(header).hide().fadeIn(2500).addClass("align-self-center");
 		$(".welcomeSection").css("box-shadow","0px 0px 3vw inset black", 2000);
@@ -40,9 +41,7 @@ $("#menuToggleBar").click(function(){
 		    ctx.drawImage(tl.text, tl.posX, tl.animate(), 20, 1000);
 		  });
 		  ctx.drawImage(logo, 100, 155, 400, 70);
-
 		}
-
 		function textLine() {
 		  this.text = t;
 		  this.posX = (function() {
@@ -57,7 +56,6 @@ $("#menuToggleBar").click(function(){
 		    return this.offsetY;
 		  };
 		}
-
 		function text() {
 		  var offscreenCanvas = document.createElement('canvas');
 		  offscreenCanvas.width = "30";
@@ -84,18 +82,23 @@ $("#menuToggleBar").click(function(){
 		  return offscreenCanvas;
 		};
 		$("#menuToggleBar").hide();
+//Koniec funkcji włączającej menu -> przejście do konkretnych sekcji
+
+//Sekcja O mnie
+		$("#leftMenu").click(function(){
+			$("#menuSection").replaceWith();
+		});
+// Sekcja Moje projekty
+		$("#rightMenu").click(function(){
+			$("#menuSection").remove();
+		});
 		});
 
-//Koniec funkcji włączającej menu
 
-	$(".menuText").click(function(){
-			$(".menuSection").hide();
-		});
 
-		$(".menuText").click(function(){
-			$(".menuSection").hide();
-	});
+		
 });
+
 
 
 
