@@ -45,6 +45,7 @@ button {
 @media screen and (max-width: 768px){
 	.projects {
 		opacity: 1 !important;
+		background-color: white;
 	}
 }
 @media screen and (max-width: 375px) {
