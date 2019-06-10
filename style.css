@@ -262,6 +262,7 @@ a.active {
 	position: absolute;
 	width: 60px;
 	height: 60px;
+	-ms-animation: motionItems 20s linear infinite;
 	-webkit-animation: motionItems 20s linear infinite;
 	        animation: motionItems 20s linear infinite;
 }
@@ -275,6 +276,7 @@ a.active {
 	z-index: 0;
 	background-image: url("wheel.png");
 	opacity: 0.3;
+	-ms-animation: motionItems 10s linear infinite;
 	-webkit-animation: motionItems 10s linear infinite;
 	        animation: motionItems 10s linear infinite;
 }
@@ -286,6 +288,7 @@ a.active {
 	width: 250px;
 	border-radius: 50%;
 	z-index: 1;
+	-ms-animation: motion 20s linear infinite;
 	-webkit-animation: motion 20s linear infinite;
 	        animation: motion 20s linear infinite;
 }
