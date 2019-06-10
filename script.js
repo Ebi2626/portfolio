@@ -1,6 +1,6 @@
 (function ($) {
 // Variables necessery to intro animation
-const logo = '<div class="mainLogoBox"><img class="mainLogo mx-auto" src="logo.PNG" style="position: relative;"></div>';
+const logo = '<div class="mainLogoBox"><img class="mainLogo mx-auto" src="Logo.PNG" style="position: relative;"></div>';
 const header = '<div class="mainDisplay"><h1 class="mainHeaderText display-4">Edwin Harmata<br>Web Developer</h1></div>';
 const height = $(window).outerHeight(true) - $("nav").outerHeight(true);
 const html = '<p id="html">HTML (<b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage) is the standard markup language for creating Web pages</p>'
