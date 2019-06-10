@@ -42,10 +42,24 @@ button {
 		margin-bottom: 100px;
 	}
 }
+@media screen and (max-width: 768px){
+	.projects {
+		opacity: 1;
+	}
+}
 @media screen and (max-width: 375px) {
 	.circle {
-		display: none;
+		height: 100px;
+		width: 100px;
 	}
+	.wheel {
+	top: 25px;
+	height: 50px;
+	width: 50px;
+	}
+	.stackItem {
+	width: 30px;
+	height: 30px;
 }
 @media screen and (max-width: 410px){
 	.skill {
@@ -67,10 +81,6 @@ button {
 /* End media Queries */
 
 /* Animations */
-@-ms-keyframes motion {
-	0% {}
-	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-}
 @-webkit-keyframes motion {
 	0% {}
 	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
@@ -78,10 +88,6 @@ button {
 @keyframes motion {
 	0% {}
 	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-}
-@-ms-keyframes motionItems {
-	0% {}
-	100% {-webkit-transform: rotate(-360deg);transform: rotate(-360deg);}
 }
 @-webkit-keyframes motionItems {
 	0% {}
