@@ -67,6 +67,10 @@ button {
 /* End media Queries */
 
 /* Animations */
+@-ms-keyframes motion {
+	0% {}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
 @-webkit-keyframes motion {
 	0% {}
 	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
@@ -74,6 +78,10 @@ button {
 @keyframes motion {
 	0% {}
 	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-ms-keyframes motionItems {
+	0% {}
+	100% {-webkit-transform: rotate(-360deg);transform: rotate(-360deg);}
 }
 @-webkit-keyframes motionItems {
 	0% {}
