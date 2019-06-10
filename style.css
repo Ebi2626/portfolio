@@ -1,0 +1,421 @@
+/*General styles */
+* {
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	font-family: 'Comfortaa', cursive;
+}
+body {
+	max-width: 100%;
+	min-height: 100vh;
+	position: relative;
+	background-color: #EDEDED;
+}
+footer {
+	margin-top: 3vh;
+	background-color: #003153;
+}
+textarea {
+	height: 500px;
+}
+button {
+	font-family: 'Comfortaa', cursive;
+}
+.color {
+	background-color: #600201;
+	color: white;
+}
+/* End general styles */
+
+/*Media Queries */
+@media screen and (min-width: 900px){
+	.mainHeaderText {
+		font-size: 8vw;
+	}
+}
+@media screen and (max-width: 992px){
+	main {
+		margin-bottom: 100px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.circle {
+		display: none;
+	}
+}
+@media screen and (max-width: 410px){
+	.skill {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+	.ball {
+		width: 15px;
+		height: 15px;
+		margin-left: 3px;
+	}
+	.unball {
+		width: 15px;
+		height: 15px;
+		margin-left: 3px;
+	}
+}
+
+/* End media Queries */
+
+/* Animations */
+@-webkit-keyframes motion {
+	0% {}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes motion {
+	0% {}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-webkit-keyframes motionItems {
+	0% {}
+	100% {-webkit-transform: rotate(-360deg);transform: rotate(-360deg);}
+}
+@keyframes motionItems {
+	0% {}
+	100% {-webkit-transform: rotate(-360deg);transform: rotate(-360deg);}
+}
+@-webkit-keyframes blinking {
+	0% {opacity: 1;}
+	20% {opacity: 1;}
+	21% {opacity: 0;}
+	23% {opacity: 1;}
+	50% {opacity: 1;}
+	55% {opacity: 1;}
+	60% {opacity: 0;}
+	62% {opacity: 1;}
+	66% {opacity: 1;}
+	68% {opacity: 0;}
+	70% {opacity: 1;}
+	75% {opacity: 1;}
+	80% {opacity: 1;}
+	92% {opacity: 1;}
+	98% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes blinking {
+	0% {opacity: 1;}
+	20% {opacity: 1;}
+	21% {opacity: 0;}
+	23% {opacity: 1;}
+	50% {opacity: 1;}
+	55% {opacity: 1;}
+	60% {opacity: 0;}
+	62% {opacity: 1;}
+	66% {opacity: 1;}
+	68% {opacity: 0;}
+	70% {opacity: 1;}
+	75% {opacity: 1;}
+	80% {opacity: 1;}
+	92% {opacity: 1;}
+	98% {opacity: 0;}
+	100% {opacity: 1;}
+}
+/* End Animations */
+
+/* Styles for intro animation */
+.mainDisplay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 100%;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+}
+.mainHeaderText {
+	font-family: 'Comfortaa', cursive;
+	text-shadow: 0px 0px 0.2px black;
+	line-height: 15vh;
+	color: #003153;
+}
+.mainLogoBox {
+	position: relative;
+	height: 300px;
+}
+.mainLogo {
+	width: 300px;
+	height: 200px;
+}
+/* End styles for intero */
+
+/* Style for headers and links */
+h1,
+h2,
+h4,
+h5,
+.nav-text,
+a {
+	font-family: 'Comfortaa', cursive;
+}
+/* End styles for headers */
+
+/* Styles for menu */
+.navbar-toggler-icon {
+	background-image: url("hamburger.jpg");
+}
+a,
+.nav-text {
+	color: white;
+}
+a:hover {
+	color: #cb8777;
+}
+.nav-text {
+	font-size: 22px;
+	font-weight: bold;
+}
+a.active {
+	background-color: #600201 !important;
+}
+.nav-link.active {
+	-webkit-animation: blinking 10s linear infinite !important;
+	        animation: blinking 10s linear infinite !important;
+}
+.bar {
+	-webkit-box-shadow: 2px 0px 4px black;
+	        box-shadow: 2px 0px 4px black;
+	background-color: #003153;
+}
+.logo {
+	width: auto;
+	height: 60px;
+}
+/* End styles for menu */
+
+/* aboutMe page */
+.technology {
+	top: 3vh;
+}
+
+.skills-list {
+	-webkit-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
+	text-decoration: none;
+	list-style-type: none;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	overflow-x: auto;
+}
+.skill {
+	text-align: left;
+	width: 100%;
+	border-bottom: solid #003153;
+	line-height: 25px;
+	letter-spacing: 1.5px;
+	font-size: 16px;
+	margin-top: 3px;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	overflow-x: auto;
+}
+.skile {
+	margin-top: 10vh;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	overflow-x: auto;
+}
+.ball {
+	margin-left: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #600201;
+	border-radius: 50%;
+	border: solid #003153;
+	float: right;
+}
+.unball {
+	margin-left: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #003153;
+	border-radius: 50%;
+	float: right;
+}
+.mePhoto {
+	display: inline-block;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	margin-right: 2vw;
+	-webkit-box-shadow: 0px 0px 5px 2px black;
+	        box-shadow: 0px 0px 5px 2px black;
+}
+.stackItem {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: motionItems 20s linear infinite;
+	        animation: motionItems 20s linear infinite;
+}
+.wheel {
+	display: inline-block;
+	position: relative;
+	top: 50px;
+	left: 0px;
+	height: 150px;
+	width: 150px;
+	z-index: 0;
+	background-image: url("wheel.png");
+	opacity: 0.3;
+	-webkit-animation: motionItems 10s linear infinite;
+	        animation: motionItems 10s linear infinite;
+}
+.circle {
+	position: relative;
+	top: 5vh;
+	border: double #003153;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	z-index: 1;
+	-webkit-animation: motion 20s linear infinite;
+	        animation: motion 20s linear infinite;
+}
+#si1 {
+	top: -10px;
+	left: 20px;
+}
+#si2 {
+	top: -10px;
+	left: 170px;	
+}
+#si3 {
+	top: 130px;
+	left: 210px;
+}
+#si4 {
+	bottom: -30px;
+	left: 90px;
+}
+#si5 {
+	top: 130px;
+	left: -20px;
+}
+.content {
+	line-height: 22px;
+	letter-spacing: 1.5px;
+	font-size: 16px;
+}
+.changingBox {
+	position: relative;
+	z-index: 0;
+	top: 100px;
+	height: 150px;
+}
+.changingText {
+	font-size: 16px;
+	letter-spacing: 2px;
+	line-height: 25px;
+}
+
+/* End styles for aboutMe page */
+
+/* myProjects styles */
+.wholeProject {
+	position: relative;
+	margin-bottom: 20px;
+	top: 3vh;
+}
+.thumbnail {
+	width: 100%;
+	height: 200px;
+	cursor: pointer;
+}
+.projectHeader {
+	position: relative;
+	top: 2vh;
+	height: 10vh;
+	opacity: 0.7;
+}
+.projects { 
+	opacity: 0.7;
+	-webkit-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background-color: #EDEDED;
+ }
+ .projects:hover { 
+	opacity: 1;
+	-webkit-box-shadow: 1px 1px 1px rgba(0,49,83,30%),
+	 -1px -1px 1px rgba(0,49,83,30%);
+	        box-shadow: 1px 1px 1px rgba(0,49,83,30%),
+	 -1px -1px 1px rgba(0,49,83,30%);
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+	-webkit-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background-color: white;
+ }
+.quote {
+	position: relative;
+	top: 15vh;
+	margin-top: 15vh;
+	z-index: 1;
+}
+.curtain {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.4;
+	z-index: 10;
+}
+.gifDisplay {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 60vw;
+	height: 60vh;
+	background-color: white;
+	z-index: 10000;
+	-webkit-box-shadow: 200px 200px 1200px 200px rgba(0, 0, 0, 20%), -200px -200px 1200px 200px rgba(0, 0, 0, 20%), 200px -200px 1200px 200px rgba(0, 0, 0, 20%), -200px 200px 1200px 200px rgba(0, 0, 0, 20%);
+	        box-shadow: 200px 200px 1200px 200px rgba(0, 0, 0, 20%), -200px -200px 1200px 200px rgba(0, 0, 0, 20%), 200px -200px 1200px 200px rgba(0, 0, 0, 20%), -200px 200px 1200px 200px rgba(0, 0, 0, 20%);
+}
+.gif {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1000000 !important;
+}
+/* End styles for myProjects page */
+/* contact styles */
+.contact {
+	height: 100vh;
+}
+.icon {
+	font-size: 20px;
+	padding: 2vh 0px 2vh 0px;
+}
+.feather {
+	opacity: 0.6;
+	position: absolute;
+	top: 5vh;
+	height: 60vh;
+	width: auto;
+}
+/* End styles for contact page */
