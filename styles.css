@@ -49,8 +49,8 @@ button {
 }
 @media screen and (max-width: 375px) {
 	.circle {
-		height: 100px;
-		width: 100px;
+	height: 100px;
+	width: 100px;
 	}
 	.wheel {
 	top: 25px;
