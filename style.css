@@ -1,4 +1,4 @@
-/*General styles */
+
 * {
 	max-width: 100%;
 	-webkit-box-sizing: border-box;
@@ -166,7 +166,7 @@ button {
 	width: 300px;
 	height: 200px;
 }
-/* End styles for intero */
+/* End styles for intro */
 
 /* Style for headers and links */
 h1,
@@ -436,4 +436,4 @@ a.active {
 	height: 60vh;
 	width: auto;
 }
-/* End styles for contact page */
+
