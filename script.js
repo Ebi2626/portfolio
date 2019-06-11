@@ -168,7 +168,7 @@ $(document).ready(function(){
 							$("#collapsibleNavbar").toggle(300);
 						}, 300);
 					});
-					$("button").click(function(){
+					$(".navbar-toggler").click(function(){
 						$("#collapsibleNavbar").toggle(300);
 					});
 				});
