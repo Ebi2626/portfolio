@@ -180,9 +180,6 @@ a {
 /* End styles for headers */
 
 /* Styles for menu */
-.navbar-toggler-icon {
-	background-image: url("hamburger.jpg");
-}
 a,
 .nav-text {
 	color: white;
