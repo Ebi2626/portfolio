@@ -25,8 +25,8 @@ button {
 	font-family: 'Comfortaa', cursive;
 }
 .color {
-	background-color: #600201;
-	color: white;
+	background-color: #600201 !important;
+	color: white !important;
 }
 /* End general styles */
 
