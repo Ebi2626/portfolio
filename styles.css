@@ -54,6 +54,10 @@ button {
 		opacity: 1 !important;
 		background-color: white !important;
 	}
+	.container,
+	.main {
+	padding-right: 0px !important;
+	}
 }
 @media screen and (max-width: 375px) {
 	.circle {
