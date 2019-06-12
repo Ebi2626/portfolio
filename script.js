@@ -83,7 +83,7 @@ $(document).ready(function(){
 		$(document).ready(function(){
 		var curtain = '<div class="curtain"></div>';
 		var displaySurvey = '<div class="gifDisplay" id="gifPlace"><img class="gif" src="survey.gif"></div>';
-		var displayjQuery = '<div class="gifDisplay" id="gifPlace"><img class="gif"src="jQuery.gif"></div>'; 
+		var displayjQuery = '<div class="gifDisplay" id="gifPlace"><img class="gif"src="jquery.gif"></div>'; 
 		var displayGame = '<div class="gifDisplay" id="gifPlace"><img class="gif"src="game.gif"></div>'; 
 		var displayPage = '<div class="gifDisplay" id="gifPlace"><img class="gif"src="otg.gif"></div>';
 
