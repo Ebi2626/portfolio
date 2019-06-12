@@ -44,6 +44,11 @@ button {
 		margin-bottom: 100px;
 	}
 }
+@media screen and (max-width: 600px){
+	main {
+		margin-bottom: 150px;
+	}
+}
 @media screen and (max-width: 768px){
 	.projects {
 		opacity: 1 !important;
