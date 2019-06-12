@@ -3,11 +3,11 @@
 const logo = '<div class="mainLogoBox"><img class="mainLogo mx-auto" src="Logo.PNG" style="position: relative;"></div>';
 const header = '<div class="mainDisplay"><h1 class="mainHeaderText display-4">Edwin Harmata<br>Web Developer</h1></div>';
 const height = $(window).outerHeight(true) - $("nav").outerHeight(true);
-const html = '<p id="html">HTML (<b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage) is the standard markup language for creating Web pages</p>'
-const css = '<p id="css">CSS (<b>C</b>ascading <b>S</b>tyle <b>S</b>heets) is a language that describes the style of an HTML document.</p>'
-const rwd = '<p id="rwd">RWD (<b>R</b>esponsive <b>W</b>eb <b>D</b>esign) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>'
-const bootstrap = '<p id="bootstrap"><b>Bootstrap</b> is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>'
-const jquery = '<p id="jq"><b>jQuery</b> is a lightweight, "write less, do more", JavaScript library. </p>'
+const html = '<p id="html" class="items">HTML (<b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage) is the standard markup language for creating Web pages</p>'
+const css = '<p id="css" class="items">CSS (<b>C</b>ascading <b>S</b>tyle <b>S</b>heets) is a language that describes the style of an HTML document.</p>'
+const rwd = '<p id="rwd" class="items">RWD (<b>R</b>esponsive <b>W</b>eb <b>D</b>esign) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>'
+const bootstrap = '<p id="bootstrap" class="items"><b>Bootstrap</b> is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>'
+const jquery = '<p id="jq" class="items"><b>jQuery</b> is a lightweight, "write less, do more", JavaScript library. </p>'
 // First part intro animation - displaying text
 $(document).ready(function(){
 	$("body").height(height);
@@ -47,37 +47,38 @@ $(document).ready(function(){
 });
 // Animation of text below the animated circle with technology icons
 $(document).ready(function(){
-	$("#si1").hover(function(){
-		$("#changingText").append(html);
-		},
-		function(){
-			$("#html").remove();
-		});
-	$("#si2").hover(function(){
-		$("#changingText").append(css);
-		},
-		function(){
-			$("#css").remove();
-		});
-	$("#si3").hover(function(){
-		$("#changingText").append(rwd);
-		},
-		function(){
-			$("#rwd").remove();
-		});
-	$("#si4").hover(function(){
-		$("#changingText").append(bootstrap);
-		},
-		function(){
-			$("#bootstrap").remove();
-		});
-	$("#si5").hover(function(){
-		$("#changingText").append(jquery);
-		},
-		function(){
-			$("#jq").remove();
-		});
+		$("#si1").hover(function(){
+			$("#changingText").append(html);
+			},
+			function(){
+				$("#html").remove();
+			});
+		$("#si2").hover(function(){
+			$("#changingText").append(css);
+			},
+			function(){
+				$("#css").remove();
+			});
+		$("#si3").hover(function(){
+			$("#changingText").append(rwd);
+			},
+			function(){
+				$("#rwd").remove();
+			});
+		$("#si4").hover(function(){
+			$("#changingText").append(bootstrap);
+			},
+			function(){
+				$("#bootstrap").remove();
+			});
+		$("#si5").hover(function(){
+			$("#changingText").append(jquery);
+			},
+			function(){
+				$("#jq").remove();
+			});
 	});
+
 // Script for displaying gifs in myProjects page
 		$(document).ready(function(){
 		var curtain = '<div class="curtain"></div>';
@@ -172,4 +173,69 @@ $(document).ready(function(){
 						$("#collapsibleNavbar").toggle(300);
 					});
 				});
+// Replacing changing text if mobile
+$(document).ready(function(){
+				if ($(window).outerWidth(true) < 992){
+					$("#changingText").append(html);
+				};
+			});
+$(document).ready(function(){
+	$(window).resize(function(){
+					if ($(".items").length > 0){
+						$("#changingText").css('opacity','1');
+					} else if ($(window).outerWidth(true) < 992){
+					$("#changingText").append(html);
+					$(window).resize(function(){
+						if ($(window).outerWidth(true) > 992){
+							$("#html").remove();
+						};
+				});
+			};
+		});
+	});
+var change
+$(document).ready(function change(){
+	 if ($(window).outerWidth(true) < 992){					
+					setTimeout(function(){
+						$("#html").replaceWith(css)
+					}, 4000);
+					setTimeout(function(){
+						$("#css").replaceWith(rwd)
+					}, 8000);
+					setTimeout(function(){
+						$("#rwd").replaceWith(bootstrap)
+					}, 12000);
+					setTimeout(function(){
+						$("#bootstrap").replaceWith(jquery)
+					}, 16000);
+					setTimeout(function(){
+						$("#jq").replaceWith(html)
+					}, 20000);
+					setInterval(change, 20000);
+				};
+			});
+$(document).ready(function changer(){
+	$(window).resize(function(){
+	 if ($(window).outerWidth(true) < 992){					
+					setTimeout(function(){
+						$("#html").replaceWith(css)
+					}, 4000);
+					setTimeout(function(){
+						$("#css").replaceWith(rwd)
+					}, 8000);
+					setTimeout(function(){
+						$("#rwd").replaceWith(bootstrap)
+					}, 12000);
+					setTimeout(function(){
+						$("#bootstrap").replaceWith(jquery)
+					}, 16000);
+					setTimeout(function(){
+						$("#jq").replaceWith(html)
+					}, 20000);
+					setInterval(changer, 20000);
+				} else {
+					$(".items").remove();
+				};
+			});
+});
 })(jQuery);
