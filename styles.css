@@ -311,6 +311,10 @@ a.active {
 	-webkit-animation: motion 20s linear infinite;
 	        animation: motion 20s linear infinite;
 }
+.items:nth-child(2){
+	display: none;
+	visibility: hidden;
+}
 #si1 {
 	top: -10px;
 	left: 20px;
