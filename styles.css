@@ -8,6 +8,9 @@
 p {
 	font-family: 'Comfortaa', cursive;
 }
+.tab-pane{
+	min-height: 80vh;
+}
 body {
 	max-width: 100%;
 	min-height: 100vh;
