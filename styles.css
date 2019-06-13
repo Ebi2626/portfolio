@@ -61,18 +61,48 @@ button {
 }
 @media screen and (max-width: 375px) {
 	.circle {
-	height: 100px;
-	width: 100px;
+	position: relative !important;
+	height: 150px !important;
+	width: 150px !important;
+	animation: motion 20s linear infinite !important;
 	}
 	.wheel {
-	top: 25px;
-	height: 50px;
-	width: 50px;
-	}
+	position: relative !important;
+	top: 37.5px !important;
+	height: 75px !important;
+	width: 75px !important;
+	display: inline-block !important;
+	z-index: 0;
+	background-image: url("wheel.png");
+	opacity: 0.3;
+	-ms-animation: motionItems 10s linear infinite;
+	-webkit-animation: motionItems 10s linear infinite;
+	        animation: motionItems 10s linear infinite;
+}
 	.stackItem {
-	width: 30px;
-	height: 30px;
+	width: 40px !important;
+	height: 40px !important;
 	}
+	#si1 {
+	top: -5px !important;
+	left: 0px !important;
+	}
+	#si2 {
+	top: -5px !important;
+	left: 100px !important;	
+	}
+	#si3 {
+	top: 80px !important;
+	left: 120px !important;
+	}
+	#si4 {
+	bottom: -20px !important;
+	left: 60px !important;
+	}
+	#si5 {
+	top: 80px !important;
+	left: -15px !important;
+}
 }
 @media screen and (max-width: 410px){
 	.skill {
